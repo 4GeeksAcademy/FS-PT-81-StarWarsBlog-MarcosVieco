@@ -26,10 +26,10 @@ export const Home = () => {
 			</div>
 		</section>
 		<section>
-			<h3>Vehicles</h3>
+			<h3>Starships</h3>
 			<div className="row">
 			{
-				store.vehicles?.map(el => <Card type={'vehicles'} key={el.uid} name={el.name} uid={el.uid} img={`https://starwars-visualguide.com/assets/img/vehicles/${el.uid}.jpg`}/>)
+				store.starships?.map(el => <Card type={'starships'} key={el.uid} name={el.name} uid={el.uid} img={`https://starwars-visualguide.com/assets/img/vehicles/${el.uid}.jpg`}/>)
 			}
 			</div>
 		</section>
